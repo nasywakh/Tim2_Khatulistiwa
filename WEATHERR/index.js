@@ -1,4 +1,4 @@
-// khofifah
+
 let key = "ba98deab6ce9cd74af9735fb0625c520";
 let city = "Jakarta";
 let container = document.getElementById("container");
@@ -26,7 +26,7 @@ function appendsData(data) {
     }
 
 
-// naufal
+
     function week(Data) {
         document.getElementById("days").innerHTML = null;
         document.getElementById("rightOne").innerHTML = null;
@@ -85,7 +85,7 @@ function appendsData(data) {
 }
 
 
-// fiqri
+
 const days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
 
 const months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
@@ -108,7 +108,7 @@ setInterval(function () {
 }, 1000);
 
 
-// finna
+
 function nightTheme() {
     document.getElementById("right").style.backgroundImage = `url("https://wallpaper.dog/large/996706.jpg")`;
     document.getElementById("left").style.backgroundImage = `url("https://wallpaper.dog/large/996706.jpg")`;
