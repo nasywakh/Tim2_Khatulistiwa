@@ -5,7 +5,18 @@ let container = document.getElementById("container");
 
 async function getWeather() {
         city = document.getElementById('city').value;
+        
+        if (city === "") {
+        alert("Please enter a valid city name.");
+        return;
+    }
+        
         let res = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${key}&units=metric`);
+        
+        if (res.status !== 200) {
+        alert("City not found. Please enter a valid city name.");
+        return;
+    }
         
         let data = await res.json();
         console.log(data);
